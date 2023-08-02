@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #0c65da;
+    --color-primary: #0c5cc5;
     --color-secondary: #16c0df;
     --color-accent: #ff3400;
     --color-heading: #12053f;
@@ -155,4 +155,25 @@ a {
         padding-left: 0;
     }
 
+}
+
+/* ICONS */
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.icon--primary {
+    fill: var(--color-primary);
+}
+
+.icon-container {
+    background: #e1e8e9;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
