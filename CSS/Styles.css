@@ -1,3 +1,5 @@
+@import "./normalize.css";
+
 :root {
     --color-primary: #0d62d1;
     --color-secondary: #16c0df;
@@ -24,6 +26,7 @@
 
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 
@@ -711,6 +714,10 @@ a {
     border-bottom: 1px solid #222;
 }
 
+.nav__item:last-of-type {
+    border-bottom: none;
+}
+
 .nav__item>a {
     color: #d2d0db;
     transition: color 0.2s;
@@ -728,7 +735,8 @@ a {
 
 .nav__brand {
     transform: translateY(5px);
-    height: 40px;
+    max-width: 160px;
+    width: 100%;
 }
 
 
@@ -748,6 +756,7 @@ a {
     .nav__item {
         border: 0;
     }
+
 }
 
 /* HERO */
@@ -809,7 +818,6 @@ a {
 
 .block-plans .grid {
     gap: 8rem 6rem;
-    align-items: stretch;
 }
 
 .block-plans .card {
@@ -822,6 +830,7 @@ a {
 .feature {
     gap: 4rem 4rem;
     margin: 12rem 0;
+    font-size: 2.4rem;
 }
 
 .feature:first-of-type {
@@ -837,12 +846,14 @@ a {
     width: 100%;
 }
 
-
 @media screen and (min-width: 768px) {
     .feature:nth-of-type(even) .feature__content {
         order: 2;
     }
 
+    .feature {
+        font-size: 2rem
+    }
 }
 
 /* SHOWCASE BLOCK */
